@@ -1,0 +1,691 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Jujutsu Kaisen</title>
+    <style>
+        .brandlogo img {
+            width: 225px;
+        }
+
+        body {
+            background-color:black;
+            color: white;
+            font-size: 1.2em;
+            padding-top: 80px;
+   
+        }
+
+        .introduction {
+            padding: 100px;
+        }
+        .introductionH{
+            color: #1a237e;
+        }
+        .intro {
+            text-align: justify;
+        }
+
+        /* Fix for the header and video */
+        header {
+            position: relative;
+            min-height: 700px;
+            overflow: hidden; /* Hide anything that overflows */
+        }
+
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: black; /* optional transparent background */
+        }
+
+        .nav-wrapper {
+            padding: 0 !important;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+
+        .tabs a:focus, .tabs .tab a:focus.active {
+            background: transparent;
+        }
+
+    .brandlogo img {
+        width: 225px;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+        font-size: 1.2em;
+        padding-top: 80px;
+    }
+
+    .introduction {
+        padding: 100px;
+    }
+
+    .introductionH {
+        color: #1a237e;
+    }
+
+    .intro {
+        text-align: justify;
+    }
+
+    /* Fix for the header and video */
+    header {
+        position: relative;
+        min-height: 700px;
+        overflow: hidden; /* Hide anything that overflows */
+    }
+
+    #background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: black; /* optional transparent background */
+    }
+
+    .nav-wrapper {
+        padding: 0 !important;
+    }
+
+    .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .tabs .indicator {
+        background-color: #1a237e;
+    }
+
+    .tabs a:focus, .tabs .tab a:focus.active {
+        background: transparent;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 1200px) {
+        .section {
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        header {
+            min-height: 500px;
+        }
+
+        .introduction {
+            padding: 50px;
+        }
+
+        .intro {
+            font-size: 1em;
+        }
+    }
+
+    @media screen and (max-width: 670px) {
+        .brandlogo img {
+            width: 150px;
+        }
+
+        .introduction {
+            padding: 30px;
+        }
+
+        .intro {
+            font-size: 0.9em;
+        }
+
+        nav {
+            position: relative; /* Change to relative for smaller screens */
+        }
+    }
+</style>
+    </style>
+</head>
+<body>
+
+    <!-- navbar -->
+    <header>
+        <!-- Background Video -->
+        <video autoplay muted loop id="background-video">
+            <source src="img/wallpaper.mp4" type="video/mp4">
+            <source src="img/wallpaper.webm" type="video/webm">
+        </video>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brandlogo"><img src="img/logo.png" alt="Logo"></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="introduction.html">Introduction</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small btn-small indigo darken-4" data-tooltip="This is Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="introduction.html">Introduction</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container section scrollspy center" id="introduction">
+        <h1 class="introductionH">Introduction</h1>
+        <p class="intro">Jujutsu Kaisen is a popular Japanese manga and anime series created by Gege Akutami. The story follows high school student Yuji Itadori, who joins a secret organization of Jujutsu Sorcerers to combat Cursed Spirits. These spirits are malevolent entities born from the negative emotions of humans. The series is known for its intense action scenes, complex characters, and unique blend of horror and supernatural elements.
+            Yuji's journey begins when he swallows a powerful cursed object—a finger belonging to the legendary Curse, Ryomen Sukuna. This act brings him into the world of Jujutsu Sorcery, where he must train and fight alongside other sorcerers to eliminate threats posed by Cursed Spirits and, ultimately, confront the powerful entity now residing within him.</p>
+    </div>
+
+    <!-- photo / grid -->
+    <section class="character container section scrollspy" id="photos">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/yuji.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">YUJI ITADORI</h3>
+                <p>Yuji Itadori is a compassionate and physically gifted teenager who, after swallowing a cursed object, becomes entangled in the dangerous world of jujutsu sorcery, wielding immense power while struggling with the curse of the malevolent spirit Sukuna inside him.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/megumi.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">MEGUMI FUSHIGURO</h3>
+                <p>Megumi Fushiguro is a calm and skilled jujutsu sorcerer with a strong sense of justice, specializing in summoning powerful Shikigami, while grappling with his complicated family background and personal ideals.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col s12 l4">
+                <img src="img/nobara.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">NOBARA KUGASAKI</h3>
+                <p>Nobara Kugisaki is a confident and determined jujutsu sorcerer with a bold personality, known for her fierce combat style using cursed tools, and she quickly becomes one of Yuji and Megumi’s closest allies at Jujutsu High.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/maki.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">MAKI ZENIN</h3>
+                <p>Maki Zenin is a fierce and determined jujutsu sorcerer, known for her exceptional combat skills and mastery of cursed tools, despite being born without the ability to use cursed energy, which drives her to prove herself within the Zenin family and the jujutsu world.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col s12 l4">
+                <img src="img/toge.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">TOGE INUNAKI</h3>
+                <p>Toge Inumaki is a quiet and reserved jujutsu sorcerer with the unique ability to use cursed speech, where his words carry powerful curses, making him communicate primarily through rice ball ingredients to avoid accidental harm to others.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/panda.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">PANDA</h3>
+                <p>Panda is a unique jujutsu sorcerer who is a cursed corpse with a humanoid form, possessing remarkable strength, a vibrant personality, and loyalty to his friends at Jujutsu High.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg col s12 l4">
+                <img src="img/gojo.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">SATORU GOJO</h3>
+                <p>Satoru Gojo is an incredibly powerful and charismatic jujutsu sorcerer, known for his mastery of the Limitless and Six Eyes techniques, and his confident, carefree attitude as a mentor at Jujutsu High.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/kusakabe.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">ATSUYA KUSAKABE</h3>
+                <p>Kusakabe is a jujutsu sorcerer and a teacher at Jujutsu High, known for his calm demeanor and his role in training students, particularly in the use of cursed techniques.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col s12 l4">
+                <img src="img/shoko.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">SHOKO IEIRI</h3>
+                <p>Shoko Ieiri is a skilled jujutsu sorcerer and a medical expert at Jujutsu High, known for her calm and laid-back personality, as well as her ability to heal injuries using cursed techniques.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/geto.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">SUGURU GETO</h3>
+                <p>Suguru Geto is a former jujutsu sorcerer turned antagonist, once a close friend of Satoru Gojo, who becomes disillusioned with the jujutsu society and seeks to eliminate non-sorcerers in his quest to create a world ruled by curses.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col s12 l4">
+                <img src="img/todo.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">AOI TODO</h3>
+                <p>Aoi Todo is a confident and powerful jujutsu sorcerer known for his immense strength, unorthodox fighting style, and his enthusiastic, straightforward personality, often forming a close bond with Yuji Itadori after their first encounter.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/kamo.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">NORITOSHI KAMO</h3>
+                <p>Noritoshi Kamo is a jujutsu sorcerer from the influential Kamo family, known for his mastery of the Blood Manipulation technique, and for his cold, calculating personality and ambition within the jujutsu world.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col s12 l4">
+                <img src="img/momo.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">MOMO NISHIYA</h3>
+                <p>Momo Nishimiya is a jujutsu sorcerer and student at Jujutsu High, known for her exceptional skills in manipulating cursed energy and her friendly, supportive personality, especially toward her peers.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/mai.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">MAI ZENIN</h3>
+                <p>Mai Zenin is a jujutsu sorcerer and the twin sister of Maki Zenin, known for her mastery of cursed tools and her more reserved, often cynical personality, as well as her struggle with living in the shadow of her more powerful sister.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/miwa.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">MASUMI MIWA</h3>
+                <p>Miwa Kasumi is a jujutsu sorcerer and student at Jujutsu High, known for her determination and strong sense of justice, though she is often portrayed as inexperienced compared to other students, relying on her sword skills in battle.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/mech.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">ULTIMATE MECH</h3>
+                <p>Mechamaru is a powerful, remote-controlled automaton that Kokichi Muta uses to fight in jujutsu battles, as Muta himself has a debilitating condition that confines him to a weak, bedridden body.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/muta.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">KOKICHI MUTA</h3>
+                <p>Kokichi Muta is a jujutsu sorcerer who controls the mechanical body *Mechamaru* due to his own frail condition, using it to fight and carry out jujutsu tasks while harboring feelings of resentment and conflict.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/utahime.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">UTAHIME IORI</h3>
+                <p>Utahime Iori is a jujutsu sorcerer and a teacher at Kyoto Jujutsu High, known for her calm and composed personality, as well as her proficiency in cursed techniques, particularly in her role as a mentor to students like Maki and Mai Zenin.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/gakuchanji.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">YOSHINOBU GAKUKANJI</h3>
+                <p>Gakuganji is a jujutsu sorcerer and the head of Kyoto Jujutsu High, known for his authoritative and traditional views on the jujutsu world, often clashing with Satoru Gojo and his more progressive ideals.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/nanami.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">KENTO NANAMI</h3>
+                <p>Kento Nanami is a skilled and pragmatic jujutsu sorcerer, known for his calm demeanor, strong sense of responsibility, and mastery of the "Ratio Technique," which he uses to efficiently defeat curses.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/ino.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">TAKUMA INO</h3>
+                <p>Takuma Ino is a jujutsu sorcerer at the Tokyo Metropolitan Magic Technical College, known for his laid-back personality and ability to control insects in combat.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/mei mei.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">MEI MEI</h3>
+                <p>Mei Mei is a skilled and confident jujutsu sorcerer from the Kyoto branch, known for her powerful cursed technique that allows her to manipulate crows for reconnaissance and combat.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/ui ui.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">UI UI</h3>
+                <p>Ui Ui is an apprentice of Mei Mei, known for his calm demeanor and skill in cursed techniques, though he plays a minor role in the story.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/naobito.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">NAOBITO ZENIN </h3>
+                <p>Mobito Zenin is a member of the Zenin family, known for his calm and serious demeanor, as well as his powerful cursed technique, which involves manipulating the cursed energy flow.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col s12 l4">
+                <img src="img/yuki.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">YUKI TSUKUMO</h3>
+                <p>Yuki Tsukumo is a powerful and mysterious jujutsu sorcerer, known for her immense strength and unique cursed technique that allows her to manipulate and control the powerful curse of a mass of cursed energy.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/mahito.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">MAHITO</h3>
+                <p>Mahito is a malevolent and dangerous cursed spirit in the series, known for his ability to manipulate souls and reshape them, making him a formidable opponent.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col s12 l4">
+                <img src="img/jogo.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">JOGO</h3>
+                <p>Jogo is a powerful cursed spirit in the series, known for his volcanic, fiery appearance and his ability to control and manipulate fire, making him a dangerous adversary.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/hanami.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">HANAMI</h3>
+                <p>Hanami is a mysterious and powerful cursed spirit, known for their deep connection to nature and ability to manipulate plants and trees for combat.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col s12 l4">
+                <img src="img/dagon.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">DAGON</h3>
+                <p>Dagon is a high-ranking cursed spirit in the series, known for his aquatic abilities and control over water, which he uses to create deadly illusions and devastating attacks.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/choso.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">CHOSO</h3>
+                <p>Choso is a cursed spirit with a human-like appearance, known for his unique blood manipulation abilities and his complex, emotional connection to his family and the events surrounding his creation.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col s12 l4">
+                <img src="img/haruta.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">HARUTA SHIGUREMO</h3>
+                <p>Haruta is a student from the Kyoto school, known for his calm demeanor and combat skills, and is involved in the events during the Shibuya Incident.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/toji.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">TOJI FUSHIGURO</h3>
+                <p>Toji Fushiguro is a former jujutsu sorcerer and skilled assassin, known for his exceptional physical abilities, lack of cursed energy, and mastery of cursed tools.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/uraume.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">URAUME</h3>
+                <p>Uraume is a mysterious and powerful figure, often associated with cursed spirits, known for their icy abilities and close connection to Sukuna.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/sukuna.webp" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">RYOMEN SUKUNA</h3>
+                <p>Sukuna is an ancient and immensely powerful curse, once a human sorcerer, known for his brutal nature, mastery of cursed techniques, and overwhelming strength that makes him a formidable threat to all.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/domain.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+    </div>
+
+    <!-- services / tabs -->
+    <section class="container section scrollspy" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h4 class="indigo-text text-darken-4">MAPPA STUDIO</h4>
+                <p>The studio behind Jujutsu Kaisen is MAPPA, renowned for its high-quality animation and dynamic action sequences, which have helped bring the series' intense battles and stunning visuals to life.</p>
+                <p>MAPPA has gained widespread acclaim for its work on *Jujutsu Kaisen*, showcasing its ability to handle complex animation and vibrant fight choreography with exceptional detail and fluidity.</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col l6">
+                        <a href="#photography" class="indigo-text text-darken-4">CAST</a>
+                    </li>
+                    <li class="tab col l6">
+                        <a href="#editing" class="indigo-text text-darken-4">STAFF</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="photography">
+                    <p class="flow-text indigo-text text-darken-4">CAST</p>
+                    <p>Yuji Itadori: Junya Enoki <br>
+                        Satoru Gojo: Yuichi Nakamura <br> 
+                        Megumi Fushiguro: Yuuma Uchida <br>
+                        Nobara Kugisaki: Asami Seto <br>
+                        Fushiguro Toji: Akio Ohtsuka <br> 
+                        Ryomen Sukuna: Junichi Suwabe <br>
+                        Maki Zenin: Mikako Komatsu <br>
+                        Toge Inumaki: Kazuya Nakai
+                        </p>
+                    <p>This talented voice cast helped bring the characters of Jujutsu Kaisen to life, contributing to its global success.
+
+
+
+
+                    </p>
+                </div>
+                <div class="col s12" id="editing">
+                    <p class="flow-text indigo-text text-darken-4">STAFF</p>
+                    <p>Director: Sunghoo Park <br>
+                        Series Composition: Hiroshi Seko <br>
+                        Character Design: Tadashi Hiramatsu <br>
+                        Animation Studio: MAPPA <br>
+                        Music: Yuuki Hayashi <br>
+                        Art Director: Seiki Tamura <br>
+                        Sound Director: Yoshikazu Iwanami <br>
+                        Editor: Shigeru Nishiyama.</p>
+                    <p>These talented individuals contributed to making Jujutsu Kaisen a visually captivating and exciting anime series.p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/void.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- contact form -->
+    <section class="container section scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h3 class="indigo-text text-darken-4">Get in Touch</h3>
+                <p>MAPPA is the best studio due to its unparalleled ability to deliver breathtaking animation, meticulously crafted fight scenes, and a consistent track record of bringing popular series to life with exceptional quality and attention to detail.</p>
+                <p>stands out as the best studio for its innovative animation techniques, seamless blending of breathtaking visuals with compelling storytelling, and its dedication to delivering some of the most visually stunning and emotionally impactful anime in recent years.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <div class="input-field indigo-text">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix indigo-text">message</i>
+                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix indigo-text">calendar_month</i>   
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date">Choose a date you need me for...</label>
+                </div>
+                <div class="input-field">
+                    <p>Services required...</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>ANIME</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>MANGA</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About me</h5>
+                    <p>im just a fan of jujutsu kaisen</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">LinkedIn</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright black darken-4">
+            <div class="container center-align">&copy; JUJUTSU KAISEN @2024</div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script> 
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>

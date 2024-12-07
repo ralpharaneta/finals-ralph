@@ -1,0 +1,301 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Jujutsu Kaisen</title>
+    <style>
+        .brandlogo img {
+            width: 225px;
+        }
+
+        body {
+            background-color:black;
+            color: white;
+            font-size: 1.2em;
+            padding-top: 80px;
+   
+        }
+
+        .introduction {
+            padding: 100px;
+        }
+        .introductionH{
+            color: #1a237e;
+        }
+        .intro {
+            text-align: justify;
+        }
+
+        /* Fix for the header and video */
+        header {
+            position: relative;
+            min-height: 700px;
+            overflow: hidden; /* Hide anything that overflows */
+        }
+
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: black; /* optional transparent background */
+        }
+
+        .nav-wrapper {
+            padding: 0 !important;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+
+        .tabs a:focus, .tabs .tab a:focus.active {
+            background: transparent;
+        }
+
+    .brandlogo img {
+        width: 225px;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+        font-size: 1.2em;
+        padding-top: 80px;
+    }
+
+    .introduction {
+        padding: 100px;
+    }
+
+    .introductionH {
+        color: #1a237e;
+    }
+
+    .intro {
+        text-align: justify;
+    }
+
+    /* Fix for the header and video */
+    header {
+        position: relative;
+        min-height: 700px;
+        overflow: hidden; /* Hide anything that overflows */
+    }
+
+    #background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: black; /* optional transparent background */
+    }
+
+    .nav-wrapper {
+        padding: 0 !important;
+    }
+
+    .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .tabs .indicator {
+        background-color: #1a237e;
+    }
+
+    .tabs a:focus, .tabs .tab a:focus.active {
+        background: transparent;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 1200px) {
+        .section {
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        header {
+            min-height: 500px;
+        }
+
+        .introduction {
+            padding: 50px;
+        }
+
+        .intro {
+            font-size: 1em;
+        }
+    }
+
+    @media screen and (max-width: 670px) {
+        .brandlogo img {
+            width: 150px;
+        }
+
+        .introduction {
+            padding: 30px;
+        }
+
+        .intro {
+            font-size: 0.9em;
+        }
+
+        nav {
+            position: relative; /* Change to relative for smaller screens */
+        }
+    }
+</style>
+    </style>
+</head>
+<body>
+
+    <!-- navbar -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brandlogo"><img src="img/logo.png" alt="Logo"></a>
+                <a href="index.html" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="introduction.html">Introduction</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="#services">Staff</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="introduction.html">Introduction</a></li>
+                    <li><a href="characters.html">Characters</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<section class="container section scrollspy" id="contact">
+    <div class="row">
+        <div class="col s12 l5">
+            <h3 class="indigo-text text-darken-4">Get in Touch</h3>
+            <p>MAPPA is the best studio due to its unparalleled ability to deliver breathtaking animation, meticulously crafted fight scenes, and a consistent track record of bringing popular series to life with exceptional quality and attention to detail.</p>
+            <p>stands out as the best studio for its innovative animation techniques, seamless blending of breathtaking visuals with compelling storytelling, and its dedication to delivering some of the most visually stunning and emotionally impactful anime in recent years.</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+            <div class="input-field indigo-text">
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="email">
+                <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix indigo-text">message</i>
+                <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix indigo-text">calendar_month</i>   
+                <input type="text" id="date" class="datepicker">
+                <label for="date">Choose a date you need me for...</label>
+            </div>
+            <div class="input-field">
+                <p>Services required...</p>
+                <p>
+                    <label>
+                        <input type="checkbox">
+                        <span>ANIME</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox">
+                        <span>MANGA</span>
+                    </label>
+                </p>
+            </div>
+            <div class="input-field center">
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="page-footer grey darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5>About me</h5>
+                <p>im just a fan of jujutsu kaisen</p>
+            </div>
+            <div class="col s12 l4 offset-l2">
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3">LinkedIn</a></li>
+                    <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright black darken-4">
+        <div class="container center-align">&copy; JUJUTSU KAISEN @2024</div>
+    </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/materialize.min.js"></script> 
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+            disableWeekends: true
+        });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+    });
+</script>
+</body>
+</html>
